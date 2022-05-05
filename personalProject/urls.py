@@ -22,8 +22,6 @@ from petclub.views import HelloWorld, PetAPIView, PersonAPIView
 urlpatterns = [
     path('hi', HelloWorld.as_view(), name="hello_world"),
     path('api-auth/', include('rest_framework.urls')),
-    path('pet',PetAPIView.as_view(), name="pet"),
-    path('person',PersonAPIView.as_view(), name="person"),
 ]
 
 
