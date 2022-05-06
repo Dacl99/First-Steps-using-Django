@@ -17,11 +17,7 @@ class Pet(models.Model):
     name = models.CharField(max_length=50)
     age = models.IntegerField()
     color = models.CharField(max_length=50)
-    owner=models.ForeignKey(
-        'Person',
-        on_delete=models.CASCADE,
-        null=True,
-    )
+
     class Meta:
         managed = True
 
